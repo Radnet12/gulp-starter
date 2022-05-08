@@ -1,0 +1,30 @@
+/* stylelint-disable scss/operator-no-unspaced */
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+
+  @if $type==1 {
+    #{$property}: $startSize + px;
+
+    @media (max-width: #{$mw + px}) {
+      #{$property}:
+        calc(
+          #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$mw - 320})
+        );
+    }
+  } @else if $type==2 {
+    #{$property}: $startSize + px;
+
+    @media (min-width: #{$mw + px}) {
+      #{$property}:
+        calc(
+          #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+        );
+    }
+  } @else {
+    #{$property}:
+      calc(
+        #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+      );
+  }
+}
