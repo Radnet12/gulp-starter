@@ -9,8 +9,7 @@
     "build": "gulp build",
     "backend": "gulp backend",
     "deploy": "gulp deploy",
-    "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "zip": "gulp zip"
   },
   "author": "Radnet12",
   "license": "ISC",
