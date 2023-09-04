@@ -91,10 +91,8 @@ main {
 
 // <СЕТКА>===================================================================
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--container-offset);
-  padding-left: var(--container-offset);
+  margin-inline: auto;
+  padding-inline: var(--container-offset);
   width: 100%;
   max-width: var(--container-width);
 }
@@ -118,7 +116,7 @@ main {
 // Components - Common
 
 // Components - Pages
-@import "./components/indexPage/hero";
+@import "./components/pages/index/hero";
 
 // Components - Pages
 

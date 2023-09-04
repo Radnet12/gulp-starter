@@ -1,7 +1,7 @@
 /* stylelint-disable scss/dollar-variable-colon-newline-after */
 @use "sass:math";
 
-@function fluid-font(
+@function fluid(
   $max-value,
   $min-value,
   $min-vw: 32rem,

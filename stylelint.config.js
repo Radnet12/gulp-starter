@@ -111,6 +111,8 @@ module.exports = {
         "margin-right",
         "margin-bottom",
         "margin-left",
+        "margin-block",
+        "margin-inline",
         "margin-before",
         "margin-end",
         "margin-after",
@@ -184,6 +186,8 @@ module.exports = {
         "padding-right",
         "padding-bottom",
         "padding-left",
+        "padding-block",
+        "padding-inline",
         "padding-before",
         "padding-end",
         "padding-after",
@@ -369,16 +373,16 @@ module.exports = {
         "scroll-snap-destination",
         "scroll-snap-type",
         "scroll-snap-type-x",
-        "scroll-snap-type-y"
+        "scroll-snap-type-y",
       ],
       {
-        unspecified: "bottomAlphabetical"
-      }
-    ]
+        unspecified: "bottomAlphabetical",
+      },
+    ],
   },
   overrides: [
     {
-      files: ["src/scss/*/**.scss"]
-    }
-  ]
+      files: ["src/scss/*/**.scss"],
+    },
+  ],
 };

@@ -562,7 +562,7 @@ exports.default = series(
   resources,
   images,
   webpImages,
-  avifImages,
+  // avifImages,
   svgSprites,
   watchFiles
 );
@@ -577,7 +577,7 @@ exports.backend = series(
   resources,
   images,
   webpImages,
-  avifImages,
+  // avifImages,
   svgSprites
 );
 
@@ -592,7 +592,7 @@ exports.build = series(
   resources,
   images,
   webpImages,
-  avifImages,
+  // avifImages,
   svgSprites,
   htmlMinify
 );
@@ -608,7 +608,7 @@ exports.deploy = series(
   resources,
   images,
   webpImages,
-  avifImages,
+  // avifImages,
   svgSprites,
   htmlMinify
 );
